@@ -7,8 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout before action 
-        run: ls -a 
-      - name: checkout action usasge  
-        uses: actions/checkout@v1
-      - name: checkout after files  
-        run: ls -a
+        run: |
+          ls -a 
+          pwd 
+      - name: checkout
+        uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
+      - name: list of files
+        run : |
+          ls -a 
+          pwd 
+    
