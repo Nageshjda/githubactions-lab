@@ -1,25 +1,25 @@
-name: checkout
+# name: checkout
 
-on: 
-  push:
-  pull_request:
-    types: [closed, assigned, opened, reopened]
+# on: 
+#   push:
+#   pull_request:
+#     types: [closed, assigned, opened, reopened]
 
-jobs:
-  build: # make sure build/ci work properly
-    runs-on: ubuntu-latest
-    steps:
-      - name: list of files
-        run : |
-          ls -a 
-          pwd 
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{ github.token }}"
-      - uses: actions/checkout@v1
-      - name: list of files after
-        run : |
-          ls -a 
-          pwd 
+# jobs:
+#   build: # make sure build/ci work properly
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: list of files
+#         run : |
+#           ls -a 
+#           pwd 
+#           echo $GITHUB_SHA
+#           echo $GITHUB_REPOSITORY
+#           echo $GITHUB_WORKSPACE
+#           echo "${{ github.token }}"
+#       - uses: actions/checkout@v1
+#       - name: list of files after
+#         run : |
+#           ls -a 
+#           pwd 
     
