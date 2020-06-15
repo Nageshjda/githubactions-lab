@@ -1,6 +1,9 @@
 name: checkout
 
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+    types: [closed, assigned, opened, reopened]
 
 jobs:
   build: # make sure build/ci work properly
