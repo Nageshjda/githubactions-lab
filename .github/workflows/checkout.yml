@@ -2,16 +2,11 @@ name: checkout
 
 on: [push]
 
-jobs: 
-  checkout:
+jobs:
+  build: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
-      - name: checkout before action 
-        run: |
-          ls -a 
-          pwd 
-      - name: checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: list of files
         run : |
           ls -a 
