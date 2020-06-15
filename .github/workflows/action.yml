@@ -1,0 +1,10 @@
+name: Action workflow
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: simple action
+        run: echo "hello"
