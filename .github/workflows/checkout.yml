@@ -9,6 +9,6 @@ jobs:
       - name: checkout before action 
         run: ls -a 
       - name: checkout action usasge  
-        uses: action/checkout@v1 
+        uses: actions/checkout@v1
       - name: checkout after files  
         run: ls -a
