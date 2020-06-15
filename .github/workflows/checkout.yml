@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: list of files
         run : |
-          ls -a 
+          ls 
           pwd 
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
