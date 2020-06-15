@@ -1,6 +1,6 @@
 name: checkout
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build: # make sure build/ci work properly
