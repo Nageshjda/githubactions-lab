@@ -1,0 +1,14 @@
+name: checkout
+
+on: [push]
+
+jobs: 
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout before action 
+        run: ls -a 
+      - name: checkout action usasge  
+        uses: action/checkout@v1 
+      - name: checkout after files  
+        run: ls -a
